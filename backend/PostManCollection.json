@@ -1,0 +1,90 @@
+{
+  "info": {
+    "name": "E-Commerce API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Address",
+      "item": [
+        {
+          "name": "Save Address",
+          "request": {
+            "method": "POST",
+            "url": "http://localhost:2424/address/save",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\"street\":\"123 Main St\", \"city\":\"Springfield\", \"zip\":\"12345\"}" }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Register User",
+          "request": {
+            "method": "POST",
+            "url": "http://localhost:2424/auth/register",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\"username\":\"testuser\", \"password\":\"password123\"}" }
+          }
+        },
+        {
+          "name": "Login User",
+          "request": {
+            "method": "POST",
+            "url": "http://localhost:2424/auth/login",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\"username\":\"testuser\", \"password\":\"password123\"}" }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Category",
+      "item": [
+        {
+          "name": "Create Category",
+          "request": {
+            "method": "POST",
+            "url": "http://localhost:2424/category/create",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\"name\":\"Electronics\"}" }
+          }
+        },
+        {
+          "name": "Get All Categories",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:2424/category/get-all"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Product",
+      "item": [
+        {
+          "name": "Get All Products",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:2424/product/get-all"
+          }
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "Get User Info",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:2424/user/my-info"
+          }
+        }
+      ]
+    }
+  ]
+}
