@@ -74,23 +74,7 @@ This is a full-stack e-commerce application built using React for the frontend a
    npm start
    ```
 
-## API Endpoints
 
-### Authentication
-- `POST /api/auth/register` - User registration
-- `POST /api/auth/login` - User login
-
-### Products
-- `GET /api/products` - Fetch all products
-- `GET /api/products/{id}` - Fetch product by ID
-- `POST /api/products` - Add a new product (Admin only)
-- `PUT /api/products/{id}` - Update a product (Admin only)
-- `DELETE /api/products/{id}` - Delete a product (Admin only)
-
-### Orders
-- `GET /api/orders` - Fetch all orders (Admin only)
-- `POST /api/orders` - Create an order
-- `GET /api/orders/{id}` - Fetch order details
 
 ## Deployment
 
