@@ -42,38 +42,6 @@ This is a full-stack e-commerce application built using React for the frontend a
 - PostgreSQL/MySQL database
 - AWS S3 bucket (if using file storage)
 
-### Backend Setup
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/ecommerce-backend.git
-   cd ecommerce-backend
-   ```
-2. Configure database connection in `application.properties`:
-   ```properties
-   spring.datasource.url=jdbc:mysql://localhost:3306/ecommerce
-   spring.datasource.username=root
-   spring.datasource.password=yourpassword
-   ```
-3. Build and run the application:
-   ```sh
-   mvn clean install
-   mvn spring-boot:run
-   ```
-
-### Frontend Setup
-1. Navigate to the frontend directory:
-   ```sh
-   cd ecommerce-frontend
-   ```
-2. Install dependencies:
-   ```sh
-   npm install
-   ```
-3. Start the application:
-   ```sh
-   npm start
-   ```
-
 
 
 ## Deployment
